@@ -15,9 +15,8 @@
 
         async void OnButtonClicked(object sender, EventArgs args)
         {
-            Button button = (Button)sender;
             await DisplayAlert("Clicked!",
-                "The button labeled '" + button.Text + "' has been clicked",
+                "The button labeled '" + ((Button)sender).Text + "' has been clicked",
                 "OK");
         }
     }

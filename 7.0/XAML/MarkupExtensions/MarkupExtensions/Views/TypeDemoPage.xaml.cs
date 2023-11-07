@@ -14,6 +14,7 @@ namespace MarkupExtensions
             {
                 View view = (View)Activator.CreateInstance(viewType);
                 view.VerticalOptions = LayoutOptions.Center;
+                view.HorizontalOptions = LayoutOptions.Center;
                 stackLayout.Add(view);
             });
 
